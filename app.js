@@ -13,14 +13,15 @@ const history = [];
 
 server.listen(PORT, () => {
   console.log('server listen at ${PORT}')
-})
-//Creating client 
-venom.create({
+  
+  venom.create({
     session: 'Mateo',
     multidevice: true
   }).then((client) => start(client)).catch((erro) => {
     console.log(erro);
   });
+})
+//Creating client 
 
 async function start(client) {
   console.log("ChatMIND is started!")
