@@ -1,0 +1,17 @@
+{
+  "name": "wsapgptnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^3.2.1",
+    "readline-sync": "^1.4.10",
+    "venom-bot": "^4.3.7"
+  }
+}
