@@ -6,8 +6,14 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
+const express = require('express')
+const server = express()
+const PORT = process.env.PORT || 3030
 const history = [];
 
+server.listen(PORT, () => {
+  console.log('server listen at ${PORT}')
+})
 //Creating client 
 venom.create({
     session: 'Mateo',
