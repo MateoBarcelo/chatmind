@@ -34,6 +34,9 @@ async function start(client) {
         console.log('Result: ', response.data);
       } catch (error) {
         console.error('Error getting response: ', error);
+        client.sendText(message.from, 'Ocurrio un error, intentalo en 5 segundos')
+        await new Promise(resolve => setTimeout(resolve, 5000)) //wait 5 sec
+        await start(client)
       }
     });
   } catch(erro) {
